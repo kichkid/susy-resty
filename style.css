@@ -1,0 +1,159 @@
+/*#carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    /*margin-bottom: 20px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari 
+}
+
+.carousel-inner {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px; /* Space for indicators
+}
+
+.carousel-item {
+    scroll-snap-align: start;
+    flex: 0 0 calc(30% - 40px);
+    min-width: calc(30% - 40px);
+    border: 10px solid #302C42;
+    background: linear-gradient(to bottom, #4b436d, #6b6488, #4e466e);
+    padding: 30px 20px;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.div33 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: 15px solid #302C42;
+    margin: 0 auto 20px;
+}
+
+.card-divider {
+    width: 50%;
+    margin: 15px auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #9287c2;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #7a6fb0;
+}
+
+/* Carousel Controls
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(48, 44, 66, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    display: none; /* Hidden by default on mobile
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Indicators 
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carousel-indicators span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.carousel-indicators span.active {
+    background: white;
+}
+
+/* Responsive Breakpoints
+@media (min-width: 768px) {
+    .carousel-item {
+        flex: 0 0 calc(30% - 30px);
+        min-width: calc(25% - 30px);
+    }
+    
+    .carousel-control {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel-item {
+        flex: 0 0 calc(25% - 30px);
+        min-width: calc(25% - 30px);
+    }
+    
+    .carousel {
+        overflow-x: hidden;
+    }
+}*/
+
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+.hover-zoom:hover {
+    transform: scale(8.1);
+}
+.card1,
+.card2,
+.card3{
+    transition: transform 3s ease;
+    transform: scale(0.1);
+}
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: scale(1);
+    border-width: 1px;
+    border-color: rgba (0, 0, white, 0.5);
+    font-size: larger;
+}

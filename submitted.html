@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="order.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Font Awesome 4 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="width: 200px; height: 700px; margin-top: 60px; background-repeat: repeat; background-size: contain; background-image: url(assets/js/images/SUSYBG.jpg);">
+
+
+    <a href="order.html" class="position-absolute top-0 start-0 m-3 text-dark hover-rotate">
+        <i class="fa-arrow-left fa-2x"></i>
+      </a>
+    <!--<div class="animate__animated animate__fadeIn transition-all"  data-aos="fade-up" style="width: 700px; height: 700px; background-color: aliceblue; justify-content: center; justify-self: center; border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); margin-top: 30px; transition: transform 0.3s ease;">
+        <div class="text-center border rounded-pill p-5 " style="background-color: brown; margin-top: 100px;" > 
+        <h1>YOUR ORDER IS SUBMITTED</h1>
+        <i class="fa-4x m-5 fas fa-certificate verified-badge"></i>
+        <P>Mail contact</P>
+        <a href="mailto:kichkidofficial@gmail.com" class="text-dark d-flex justify-content-center ">
+            <i class="fas fa-envelope text-dark me-2 mt-1"></i> Contact us
+            </a>
+        </div>
+    </div>-->
+    
+
+    <div class="animate__animated animate__fadeIn transition-all hover-transform" data-aos="fade-up" style="width: 700px; height: 700px;  background-color: rgb(156, 156, 156); border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); margin: 30px auto; transition: all 0.1s ease; background-repeat: repeat; background-size: cover;">
+        <div class="text-center border rounded-pill p-5 hover-inner-transform" style="background-color: brown; margin-top: 100px; color: white; transition: all 0.9s ease;">
+            <h1 class="hover-text-grow">YOUR ORDER IS SUBMITTED</h1>
+            <i class="fa-4x m-5 fas fa-certificate verified-badge hover-bounce"></i>
+            <p class="hover-text-color">Mail contact</p>
+            <a href="mailto:kichkidofficial@gmail.com"  class="text-dark d-flex justify-content-center hover-link-grow"><i class="fas fa-envelope text-dark me-2 mt-1"></i> Contact us</a>
+        </div>
+</div>
+
+<style>
+  /* Main container hover effect */
+  .hover-transform:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  /* Inner container hover effect */
+  .hover-inner-transform:hover {
+    transform: scale(1.02);
+    background-color: #fa6b06 !important; /* Darker brown on hover */
+  }
+  
+  /* Text hover effects */
+  .hover-text-grow:hover {
+    transform: scale(1.05);
+    display: inline-block; /* Needed for transform to work on text */
+  }
+  
+  .hover-text-color:hover {
+    color: white !important;
+  }
+  
+  /* Badge hover effect */
+  .hover-bounce:hover {
+    animation: bounce 0.5s;
+  }
+  
+  /* Link hover effect */
+  .hover-link-grow:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Smooth transitions for all elements */
+  .transition-all, 
+  .hover-text-grow, 
+  .hover-inner-transform, 
+  .hover-link-grow,
+  .hover-bounce,
+  .hover-text-color {
+    transition: all 0.3s ease;
+  }
+</style>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="main.js"></script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src='main.js'></script>
+</body>
+</html>

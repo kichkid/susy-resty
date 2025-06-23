@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucy Resty Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!--style-->
+    <style>
+        .hover-grow {
+            transition: all 0.3s ease;
+        }
+        .hover-grow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1)!important;
+        }
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .hover-grow:hover .icon-container {
+            background: rgba(13, 110, 253, 0.2);
+            transform: scale(1.1);
+        }
+        .bg-primary-soft {
+            background: rgba(13, 110, 253, 0.1);
+        }
+    
+
+    
+
+    .hover-grow {
+        transition: all 0.3s ease;
+    }
+    .hover-grow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1)!important;
+    }
+    .icon-container {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+    .hover-grow:hover .icon-container {
+        background: rgba(25, 135, 84, 0.2);
+        transform: scale(1.1);
+    }
+    .bg-success-soft {
+        background: rgba(25, 135, 84, 0.1);
+    }
+    .truck-icon {
+        transition: all 0.5s ease;
+    }
+    .lightning-icon {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        font-size: 1rem;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+    .delivery-card:hover .truck-icon {
+        transform: translateX(5px);
+    }
+    .delivery-card:hover .lightning-icon {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    .delivery-features span {
+        font-size: 0.9rem;
+    }
+
+
+    .hover-grow {
+        transition: all 0.3s ease;
+    }
+    .hover-grow:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1)!important;
+    }
+    .icon-container {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    .custom-order-card:hover .icon-container {
+        background: rgba(255, 193, 7, 0.2);
+        transform: scale(1.1);
+    }
+    .bg-warning-soft {
+        background: rgba(255, 193, 7, 0.1);
+    }
+    .order-icon {
+        transition: all 0.3s ease;
+    }
+    .custom-order-card:hover .order-icon {
+        transform: rotate(-15deg);
+    }
+    .custom-options span {
+        font-size: 0.9rem;
+    }
+    .badge {
+        font-size: 0.6rem;
+        padding: 0.35em 0.65em;
+    }
+</style>
+
+
+
+
+    <!--nav faq-->
+    <nav class="navbar-expand-lg navbar-dark bg-danger p-1" style="top: 0; opacity: 1; position:relative; ">
+        <div class="container m-0  justify-content-between" >
+
+
+            <div class="container d-flex ">
+
+                <div class=" col-5 col-lg-3 col-md-3 ms-0 p-0 ">
+                    <a class="navbar-brand d-flex mt-sm-3 mb-sm-3 " href="#">
+                        <img src="assets/js/images/WhatsApp Image 2025-06-05 at 02.13.31.jpeg" alt="" class="img-fluid w-25 mb-3">
+                        <h3>Susy Resty</h3>
+                    </a>
+                </div>
+
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainnavbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-7 col-lg-9 col-md-9 gap-2 justify-content-between align-items-between" id="mainnavbar">
+    
+                    <a href="about.html" class="btn btn-dark text-white cancel-link d-lg-none d-md-none d-block">✕ Cancel</a>
+                    <ul class="navbar-nav me-auto ms-lg-5 ms-md-5" id="mainnavbar">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nearme.html">Near Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; width: max-content;">FaQ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">
+                                Products
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="">Meat pies</a></li>
+                                <li><a class="dropdown-item" href="#">
+                                </a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#">
+                                </a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#">
+                                </a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#">
+                                </a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#">
+                                </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Emergency Need ?</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+                   
+                    <div class="d-lg-flex d-md-flex align-items-center ">
+                        <!--search click-->
+                        
+                            <form class="d-flex ms-lg-5 ms-md-5 me-lg-4 me-md-4 " role="search">
+                                <input class="form-control ms-lg-5 ms-md-5 me-lg-4 me-md-4  " type="search" placeholder="Search" aria-label="Search" style="width: 200px; height: fit-content;">
+                                <button class="btn btn-outline-light ms-lg-1 ms-md-1 me-lg-4 me-md-4 " type="submit" style="width: 70px; height: fit-content;"><a href="" class="text-dark">Search</a></button>
+                                <div class="ms-1 mt-2 ">
+                                    <i class="fa fa-shopping-cart ms-lg-2 ms-md-2 me-lg-4 me-md-4 " ><a href="order.html" class="text-dark ms-1">order</a></i></i> 
+                                    
+                                </div>
+                            </form> 
+                            
+                            <!--signin and login btn-->
+                            <!--<div class="d-lg-block d-md-none d-none ms-lg-5 ms-md-5 pt-2 ">
+                                <div class=" d-flex">
+                                    <div class="ms-5">
+                                        <a class="btn btn-outline-light" href="#" style="margin-left: 10px; margin-bottom: 10px;">Login</a>
+                                    </div>
+                                    <div class="ms-3" style="width: 100px; height: fit-content;">
+                                        <a class="btn btn-outline-dark" href="#" style="margin-left: 10px; ">Sign Up</a>
+                                    </div>
+                                   
+                                </div> 
+                            </div>-->
+
+                            
+                            
+                        
+        
+    
+                            <!-- As a clickable mailto link -->
+                            <a href="mailto:kichkidofficial@gmail.com" class="text-white d-flex mt-2 mb-2 text-center " style="width: 150px;">
+                                <i class="fas fa-envelope text-white mt-2 mb-2 me-1"></i> Contact us
+                            </a>
+                            <a class="btn btn-danger text-white d-flex mt-2 mb-2 text-center" style="width: 200px;" href="index.html" role="button" >Log-out
+                                <i class="fas fa-sign-out-alt text-white mt-2 mb-2 ms-1"></i>
+                            </a>
+                            
+                        
+                        
+        
+                        
+        
+        
+                        
+        
+                        <!--<button class="btn btn-dark d-block d-lg-none d-md-block mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" style="width: 340px;">Log-in / Sign-up
+                        </button>
+        
+                        <div class="offcanvas offcanvas-top d-block d-lg-none d-md-block" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header bg-danger">
+                                <h5 class="pe-3">Back</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <div class="col-12 d-flex justify-content-center align-items-center">
+                                    <a class="btn m-5 btn-outline-dark text-white" href="#" >Login</a>
+                                    <a class="btn m-5 btn-outline-dark text-white" href="#" >Sign Up</a>
+                                </div>
+                        </div> -->
+
+
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+
+
+            
+
+            
+        </div>
+        
+    </nav>
+
+    <div class="container-fluid my-5">
+        <h1 class="text-center mb-4">Services We Provide</h1>
+        <div class="row">
+            <div class="col-md-4 text-center mb-4">
+                <div class="card h-100 p-4 border-0 shadow-sm hover-grow bg-light rounded-3">
+                    <!-- Animated Icon -->
+                    <div class="icon-container bg-primary-soft mb-4 mx-auto rounded-circle p-3">
+                        <i class="fas fa-utensils fa-3x text-primary"></i>
+                    </div>
+                    
+                    <!-- Heading -->
+                    <h3 class="fw-bold mb-3 text-dark">Delicious Meals</h3>
+                    
+                    <!-- Description -->
+                    <p class="text-muted mb-4">We offer a carefully crafted menu of freshly prepared meals made with locally sourced ingredients. From hearty classics to innovative dishes, every bite is designed to delight your taste buds.</p>
+                    
+                    <!-- Features Badges -->
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                        <span class="badge bg-primary-soft text-primary">Seasonal Menu</span>
+                        <span class="badge bg-primary-soft text-primary">Chef's Specials</span>
+                        <span class="badge bg-primary-soft text-primary">Dietary Options</span>
+                    </div>
+                    
+                    <!-- Interactive Button -->
+                    <a href="#" class="btn btn-primary px-4 rounded-pill d-inline-flex align-items-center">
+                        Explore Menu <i class="fas fa-chevron-right ms-2 small"></i>
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-4 text-center mb-4">
+                <div class="card h-100 p-4 border-0 shadow-sm hover-grow bg-light rounded-3 delivery-card">
+                    <!-- Animated Delivery Truck Icon -->
+                    <div class="icon-container bg-success-soft mb-4 mx-auto rounded-circle p-3">
+                        <i class="fas fa-truck fa-3x text-success truck-icon"></i>
+                        <i class="fas fa-bolt lightning-icon text-warning"></i>
+                    </div>
+                    
+                    <!-- Heading -->
+                    <h3 class="fw-bold mb-3 text-dark">Fast Delivery</h3>
+                    
+                    <!-- Description -->
+                    <p class="text-muted mb-4">Enjoy our lightning-fast delivery service with real-time tracking. We guarantee your order will arrive fresh and hot within 30 minutes or it's on us!</p>
+                    
+                    <!-- Delivery Features -->
+                    <div class="delivery-features mb-4">
+                        <div class="d-flex justify-content-center mb-2">
+                            <span class="me-3"><i class="fas fa-clock text-success me-2"></i> 30-min Guarantee</span>
+                            <span><i class="fas fa-map-marker-alt text-success me-2"></i> Live Tracking</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <span class="me-3"><i class="fas fa-temperature-high text-success me-2"></i> Hot & Fresh</span>
+                            <span><i class="fas fa-shield-alt text-success me-2"></i> Contactless</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Area Badge -->
+                    <div class="service-badge mb-3">
+                        <span class="badge bg-success bg-opacity-10 text-success">Serving 5+ neighborhoods</span>
+                    </div>
+                    
+                    <!-- Interactive Button -->
+                    <a href="#" class="btn btn-success px-4 rounded-pill d-inline-flex align-items-center">
+                        Track Order <i class="fas fa-location-arrow ms-2 small"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card h-100 p-4 border-0 shadow-sm hover-grow bg-light rounded-3 custom-order-card">
+                    <!-- Animated Icon with Badge -->
+                    <div class="icon-container bg-warning-soft mb-4 mx-auto rounded-circle p-3 position-relative">
+                        <i class="fas fa-concierge-bell fa-3x text-warning order-icon"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            Custom
+                            <span class="visually-hidden">custom orders</span>
+                        </span>
+                    </div>
+                    
+                    <!-- Heading -->
+                    <h3 class="fw-bold mb-3 text-dark">Custom Orders</h3>
+                    
+                    <!-- Description -->
+                    <p class="text-muted mb-4">Create your perfect meal with our fully customizable options. Modify ingredients, adjust portion sizes, or request special preparations - our chefs will bring your vision to life!</p>
+                    
+                    <!-- Customization Options -->
+                    <div class="custom-options mb-4 text-start">
+                        <div class="d-flex mb-2">
+                            <i class="fas fa-check-circle text-warning me-2 mt-1"></i>
+                            <span>Choose your protein, veggies, and sides</span>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="fas fa-check-circle text-warning me-2 mt-1"></i>
+                            <span>Adjust spice levels and sauces</span>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-check-circle text-warning me-2 mt-1"></i>
+                            <span>Special dietary requests accommodated</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Allergy Notice -->
+                    <div class="alert alert-warning bg-warning-soft border-warning text-start small mb-4">
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        Please inform us about any food allergies or restrictions
+                    </div>
+                    
+                    <!-- Interactive Button -->
+                    <a href="#" class="btn btn-warning text-white px-4 rounded-pill d-inline-flex align-items-center">
+                        Build Your Meal <i class="fas fa-utensils ms-2 small"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <footer class="row bg-dark text-white text-center p-5">
+        <div class="col-12 col-md-6 col-lg-6">
+            
+            <img src="assets/js/images/WhatsApp Image 2025-06-05 at 02.13.31.jpeg" alt="" class="img-fluid w-25 mb-3">
+        </div> 
+
+        <div class=" col-12 col-md-6 col-lg-6 mt-5">
+            <p>
+                <input type="email" placeholder="Direct order" class="form-control w-50 d-inline-block">
+                <a class="btn text-white p-3">Submit</a> <br>
+                <a href="" class="text-white p-3"><i class="fa-solid fa-home"></i>Home</a> <br>
+                <a href=""  class="text-white p-3"><i class="fa-solid fa-phone"></i>Contact</a> <br>
+                <a href="" class="text-white p-3"><i class=""></i>At your convinience</a>
+            </p>
+        </div>
+       
+    </footer>
+    <div class="bg-dark text-white text-center">
+        <p class="mb-0">© 2023 - 2025 Susy-Resty. All rights reserved.</p>
+        <p class="mb-0">Follow us on:
+            <a href="#" class="text-white"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBank - Your Trusted Financial Partner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-piggy-bank me-2"></i>BestBank
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/accounts">Accounts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/checking">Checking</a></li>
+                            <li><a class="dropdown-item" href="/savings">Savings</a></li>
+                            <li><a class="dropdown-item" href="/loans">Loans</a></li>
+                            <li><a class="dropdown-item" href="/investments">Investments</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex">
+                    <a href="/login" class="btn btn-outline-light me-2">Login</a>
+                    <a href="/register" class="btn btn-light">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="bg-primary text-white text-center py-5" style="height: 400px;">
+                    <div class="container h-100 d-flex flex-column justify-content-center">
+                        <h1 class="display-4">Welcome to BestBank</h1>
+                        <p class="lead">Your trusted partner for financial growth.</p>
+                        <a href="/login" class="btn btn-light btn-lg mt-3">Join Us Today</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="bg-success text-white text-center py-5" style="height: 400px;">
+                    <div class="container h-100 d-flex flex-column justify-content-center">
+                        <h1 class="display-4">Premium Banking</h1>
+                        <p class="lead">Experience our highest interest rates.</p>
+                        <a href="/login" class="btn btn-light btn-lg mt-3">Open an Account</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <div class="bg-info text-white text-center py-5" style="height: 400px;">
+                    <div class="container h-100 d-flex flex-column justify-content-center">
+                        <h1 class="display-4">24/7 Support</h1>
+                        <p class="lead">We're always here when you need us.</p>
+                        <a href="/login" class="btn btn-light btn-lg mt-3">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Live Rates Ticker -->
+    <div class="container-fluid bg-light py-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Live Market Rates</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5><i class="fas fa-chart-line me-2"></i>S&P 500</h5>
+                            <div class="display-6 fw-bold my-2" id="stockRate">4,567.89</div>
+                            <span class="badge bg-success">+1.23%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5><i class="fab fa-bitcoin me-2"></i>Bitcoin</h5>
+                            <div class="display-6 fw-bold my-2" id="bitcoinRate">$36,842.19</div>
+                            <span class="badge bg-danger">-2.45%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5><i class="fas fa-exchange-alt me-2"></i>EUR/USD</h5>
+                            <div class="display-6 fw-bold my-2" id="currencyRate">1.0987</div>
+                            <span class="badge bg-success">+0.12%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <small class="text-muted">Rates update every 30 seconds - Last updated: <span id="updateTime"></span></small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-piggy-bank fa-3x text-primary mb-3"></i>
+                        <h3>Savings Accounts</h3>
+                        <p class="card-text">High interest rates for your savings with flexible withdrawal options.</p>
+                        <a href="/savings" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-hand-holding-usd fa-3x text-primary mb-3"></i>
+                        <h3>Loans</h3>
+                        <p class="card-text">Flexible loans with competitive rates tailored to your needs.</p>
+                        <a href="/loans" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Checking Accounts</h5>
+                            <p class="card-text">Easy-to-use checking accounts with no hidden fees.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Mortgages</h5>
+                            <p class="card-text">Home loans with competitive rates and flexible terms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Investment Services</h5>
+                            <p class="card-text">Professional investment advice and portfolio management.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <p>Learn about our bank's history and mission.</p>
+                    <a href="/about" class="btn btn-outline-light btn-sm">Learn More</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Services</h5>
+                    <p>Explore our banking products and services.</p>
+                    <a href="/services" class="btn btn-outline-light btn-sm">Learn More</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <p>Get help with your account or services.</p>
+                    <a href="/support" class="btn btn-outline-light btn-sm">Learn More</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Reach out to our customer service team.</p>
+                    <a href="/contact" class="btn btn-outline-light btn-sm">Learn More</a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>&copy; 2023 BestBank - The Best Bank, Gives Good Rate.</p>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="/privacy" class="text-white mx-2">Privacy Policy</a>
+                    <a href="/terms" class="text-white mx-2">Terms of Service</a>
+                    <a href="/security" class="text-white mx-2">Security</a>
+                    <a href="/accessibility" class="text-white mx-2">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Update rates and timestamp
+        function updateRates() {
+            const now = new Date();
+            document.getElementById('updateTime').textContent = now.toLocaleTimeString();
+            
+            // Simulate rate changes
+            document.getElementById('stockRate').textContent = (4567.89 + (Math.random() * 10 - 5)).toFixed(2);
+            document.getElementById('bitcoinRate').textContent = '$' + (36842.19 + (Math.random() * 1000 - 500)).toFixed(2);
+            document.getElementById('currencyRate').textContent = (1.0987 + (Math.random() * 0.02 - 0.01)).toFixed(4);
+        }
+        
+        // Initial update
+        updateRates();
+        
+        // Update every 30 seconds
+        setInterval(updateRates, 30000);
+    </script>
+</body>
+</html>
